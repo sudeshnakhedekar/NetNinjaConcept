@@ -1,29 +1,37 @@
-//while loop
-let i=0;
-while(i<5){
-    console.log(i);
-    i++;
+//if statement
+const age = 25;
+if(age > 20){
+    console.log('you are over 20 years old');
+
 }
 
-const names=['shaun', 'meg', 'jugli']
-let j =0;
-while(j<names.length){
-    console.log(names[j]);
-    j++;
+const ninjas = ['shaun','meg','chun-li','yoshi'];
+if(ninjas.length > 3)//if more than 3 the value won't print
+{
+    console.log('that\'s a lot of ninjas');// this\'s is used here 
+}
+console.log('  ');// space
+
+
+//if else staement
+const password = 'p@ss';
+if(password.length >=8){
+    console.log('that password is long enough!');
+}
+else{
+    console.log('that password is not long enough!');
 }
 
-//do while loop
-let k=5;
-do{
-    console.log('val of k is : ' ,k);
-    k++;
-}while(k<5);
+// else if staement
 
+const password1 = 'p@ssword123456789';
+if(password1.length >=12){
+    console.log('Your password is extermly strong!');
 
-const name=['shaun', 'meg', 'jugli']
-let l =1;
-do{
-    console.log(name[l]);
-    l++;
-}while(i <name.length);
-
+}
+else if(password1.length >=8){
+    console.log('that password is long enough!');
+}
+else{
+    console.log('that password is not long enough!');
+}
