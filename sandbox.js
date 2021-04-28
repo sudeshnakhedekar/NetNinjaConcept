@@ -1,24 +1,29 @@
-//for loop
-
-for(let i = 0; i<5; i++){
-    console.log(i);//prints 0 to 4
-
-}
-console.log('Loop is over!');
-
-
-const names =['shaun','meg','julgi'];
-let i;
-for(i = 0; i<names.length; i++){
-// console.log(i); // print 0 to 2
-// console.log(names[i]);//prints names
-
-// let html =`<div>${names[i]}</div>`;
-// console.log(html);//html template
-
-console.log(`<div>${names[i]}</div>`);// console run iterations
+//while loop
+let i=0;
+while(i<5){
+    console.log(i);
+    i++;
 }
 
+const names=['shaun', 'meg', 'jugli']
+let j =0;
+while(j<names.length){
+    console.log(names[j]);
+    j++;
+}
+
+//do while loop
+let k=5;
+do{
+    console.log('val of k is : ' ,k);
+    k++;
+}while(k<5);
 
 
+const name=['shaun', 'meg', 'jugli']
+let l =1;
+do{
+    console.log(name[l]);
+    l++;
+}while(i <name.length);
 
