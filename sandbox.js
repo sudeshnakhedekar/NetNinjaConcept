@@ -1,19 +1,24 @@
-//type conversion
-let score ='100';
-console.log(  score +1);
-score = Number(score)
-console.log(  score +1 );
+//for loop
+
+for(let i = 0; i<5; i++){
+    console.log(i);//prints 0 to 4
+
+}
+console.log('Loop is over!');
 
 
-let result= Number('hello')
-console.log( typeof result);
-console.log(result);
-let result1 = String(50);
-console.log( typeof result1);
-console.log(result1);
-let result2= Boolean(100);//if value is 0 print false value.
-console.log( typeof result2);
-console.log(result2);
-let result3 = Boolean('0');
-console.log( typeof result3);//' ' will print false as value.
-console.log(result3);
+const names =['shaun','meg','julgi'];
+let i;
+for(i = 0; i<names.length; i++){
+// console.log(i); // print 0 to 2
+// console.log(names[i]);//prints names
+
+// let html =`<div>${names[i]}</div>`;
+// console.log(html);//html template
+
+console.log(`<div>${names[i]}</div>`);// console run iterations
+}
+
+
+
+
