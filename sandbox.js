@@ -1,36 +1,21 @@
-let radius =10;
-const pi = 3.14;
+const title = 'Romeo and Juliet '
+const author = 'Sheikhspeare'
+const follower = 10000000000;
 
-//console.log(radius, pi);
-
-//Math Operator +, -, *, /, %, **.
-
-let result = 5^3;
+//concatenation string way
+let result = ' The Story named ' + title + ' by ' +author+ ' has ' +follower+ ' follower.';
 console.log(result);
 
-let result1 = radius % 3;
+//template string way
+let result1 = `The Story named ${title} by ${author} has ${follower} follower.`;
 console.log(result1);
 
-// order of operation - B I D M A S
+//creating HTML templates
+let HTML=`
+<h2>${title}</h2>
+<p> ${author}</p>
+<span>The story has ${follower} follower</span>
+`;
 
-let result2 = 2*(5-3)**2;
-console.log(result2);
-
-//increment and decrement in math
-let likes = 10;
-//likes++;
-//likes--;
-//likes +=10;
-//likes -=5;
-//likes *=2;
-console.log(likes);
-
-
-//NAN
-
- //concatinate
- let result3 = 'the blog has ' + likes + ' likes'
- console.log(result3);
-
-
+console.log(HTML);
 
