@@ -1,28 +1,12 @@
-//Strings
-console.log('hello world');
+// common String methods
 
-let email = 'sudu@gmail.com';
-console.log(email);
+let email = 'sudukhedekar@gmail.com';
 
-
-//String concatenation
-let firstName = 'Sudeshna';
-let secondName = 'Khedekar';
-let fullName = firstName + '  ' + secondName;
-console.log(fullName);
-
-//getting characters
-console.log(fullName[2]);
-
-//String length
-
-console.log(fullName.length);
-
-//string mothods
-console.log(fullName.toUpperCase());
-let result = fullName.toLowerCase();
+//let result = email.lastIndexOf('u');
+//let result = email.slice(0,5);
+// let result = email.substr(4,5);
+let result = email.replace('u','o');//replace only the first 'u'
 console.log(result);
-
 
 
 
