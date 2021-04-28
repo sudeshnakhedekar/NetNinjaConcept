@@ -1,16 +1,29 @@
-alert('hello, world');
+//Strings
+console.log('hello world');
 
-let age = 25;
-let year= 2000;
-console.log(age, year);
+let email = 'sudu@gmail.com';
+console.log(email);
 
-age= 30;
-console.log(age);
 
-const point = 100;
-console.log(point);
+//String concatenation
+let firstName = 'Sudeshna';
+let secondName = 'Khedekar';
+let fullName = firstName + '  ' + secondName;
+console.log(fullName);
 
-var score = 50;
-console.log(score);
-score=100;
-console.log(score);
+//getting characters
+console.log(fullName[2]);
+
+//String length
+
+console.log(fullName.length);
+
+//string mothods
+console.log(fullName.toUpperCase());
+let result = fullName.toLowerCase();
+console.log(result);
+
+
+
+
+
