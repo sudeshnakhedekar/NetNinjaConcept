@@ -1,27 +1,24 @@
+//break and continue
+const scores =[50,25,0,30,100,20,10]
+for (let i = 0 ; i < scores.length; i++){
+ 
+    if(scores[i] ===0){
+        continue;//continue ignore the code block and continue the loop.
+    }
 
-//LOGICAL OPERATOR : OR || and AND &&
-console.log('LOGICAL OPERATOR : OR || and AND && :');
-const password1 = 'password';
-if(password1.length >=12 && password1.includes('@')){
-    console.log('Your password is extermly strong!');
+    console.log('your score :' , scores[i]);
 
-}
-else if(password1.length >=8 || password1.includes('@' && password1.length>=5)){
-    console.log('that password is strong enough!');
-}
-else{
-    console.log('that password is not strong enough!');
+    if(scores[i] ===100){
+        console.log('Congrats, you have got the top score!');
+        break;//breaks out the loop ,no more iterations
+    }
 }
 
-//LOGICAL OPERATOR : NOT !
-console.log('LOGICAL OPERATOR : NOT !');
-console.log(!true);
-console.log(!false);
 
-const user =false;
-if(!(user)){
-    console.log('you must be logged in to continue.');
-}
+
+
+
+
 
 
 
