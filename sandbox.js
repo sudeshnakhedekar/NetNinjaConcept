@@ -1,18 +1,47 @@
-//break and continue
-const scores =[50,25,0,30,100,20,10]
-for (let i = 0 ; i < scores.length; i++){
- 
-    if(scores[i] ===0){
-        continue;//continue ignore the code block and continue the loop.
-    }
+//switch staements
+const grade ='A';
 
-    console.log('your score :' , scores[i]);
-
-    if(scores[i] ===100){
-        console.log('Congrats, you have got the top score!');
-        break;//breaks out the loop ,no more iterations
-    }
+switch(grade){
+    case 'A':
+        console.log("you got an A! grade");
+        break;
+    case 'B':
+        console.log("you got an B! grade");
+        break;
+    case 'C':
+        console.log("you got an C! grade");
+        break;
+    case 'D':
+        console.log("you got an D! grade");
+        break; 
+    case 'E':
+        console.log("you got an E! grade");
+        break; 
+    default:
+        console.log('not a valid grade!');      
 }
+
+
+
+
+
+//using if statements
+//NOTE: JUST TOL UNDERSTAND HERE
+// if(grade === 'A'){
+
+// }else if (grade === 'B'){
+
+// }else if (grade === 'C'){
+
+// }else if (grade === 'D'){
+
+// }else if (grade === 'E'){
+
+// }else{
+    
+// }
+
+
 
 
 
