@@ -1,34 +1,6 @@
-//function declaration ----> hosting is possible here
-
-greet();
-greet();
-greet();
-function greet(){
-
-    console.log('hello there');
-}
-
-
-//function expression ------>  hosting is not possible here
-
-const speak = function(){
-    console.log('good day!');
-}
-
-speak();
-speak();
-speak();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//parameters  & arguments
+ const speak = function(name= 'billo',time='night'){
+     console.log(`good ${time} ${name}`);
+ }
+ speak();
+  speak('sudu','morning');
