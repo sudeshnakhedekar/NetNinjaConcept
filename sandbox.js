@@ -1,37 +1,27 @@
-//if statement
-const age = 25;
-if(age > 20){
-    console.log('you are over 20 years old');
 
-}
-
-const ninjas = ['shaun','meg','chun-li','yoshi'];
-if(ninjas.length > 3)//if more than 3 the value won't print
-{
-    console.log('that\'s a lot of ninjas');// this\'s is used here 
-}
-console.log('  ');// space
-
-
-//if else staement
-const password = 'p@ss';
-if(password.length >=8){
-    console.log('that password is long enough!');
-}
-else{
-    console.log('that password is not long enough!');
-}
-
-// else if staement
-
-const password1 = 'p@ssword123456789';
-if(password1.length >=12){
+//LOGICAL OPERATOR : OR || and AND &&
+console.log('LOGICAL OPERATOR : OR || and AND && :');
+const password1 = 'password';
+if(password1.length >=12 && password1.includes('@')){
     console.log('Your password is extermly strong!');
 
 }
-else if(password1.length >=8){
-    console.log('that password is long enough!');
+else if(password1.length >=8 || password1.includes('@' && password1.length>=5)){
+    console.log('that password is strong enough!');
 }
 else{
-    console.log('that password is not long enough!');
+    console.log('that password is not strong enough!');
 }
+
+//LOGICAL OPERATOR : NOT !
+console.log('LOGICAL OPERATOR : NOT !');
+console.log(!true);
+console.log(!false);
+
+const user =false;
+if(!(user)){
+    console.log('you must be logged in to continue.');
+}
+
+
+
