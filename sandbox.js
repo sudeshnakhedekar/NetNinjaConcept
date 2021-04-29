@@ -6,7 +6,7 @@ const people = ['mario','linigi','ryu','shaun','chum-li'];
 
 let html =``;
 
-people.forEach(function(person){
+people.forEach( person =>{
  //create html template
 html += `<li style ="color: purple">${person}</li>`
 });
