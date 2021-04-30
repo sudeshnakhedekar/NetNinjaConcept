@@ -1,36 +1,26 @@
-//object in array.
+//Math object
 
-// const  blogs=[
-//     {title:'why maac &  chese rules',likes: 30 },
-//     {title:'10 things to make with marmite' ,likes:50}
-// ]
-// console.log(blogs);
+console.log(Math);
+console.log(Math.PI);
+console.log(Math.E);
 
-let user ={
-    name: 'crystal',
-    age: 20,
-    email:'crystal@helloji.gmail.com',
-    location: 'berlin',
-    blogs:[ {title:'why maac &  chese rules',likes: 30 },
-    {title:'10 things to make with marmite' ,likes:50}],
-    login: function(){
-        console.log('the user is logged in');
-    },
-    logout: ()=>{
-        console.log('the user is logged out');
-    },
-    logBlogs(){
-//console.log(this.blogs);
-console.log('this user has written the following blogs:');
-this.blogs.forEach(blogs =>{
-    console.log(blogs.title, blogs.likes);
-})
-    }
-    
-};
-user.login();
-user.logout();
-user.logBlogs();
+
+const area =7.7;
+
+console.log(Math.round(area));// round up to and integer 
+console.log(Math.floor(area));
+console.log(Math.ceil(area));
+console.log(Math.trunc(area));
+
+//random numbers
+
+const random = Math.random();
+console.log(random);
+console.log(Math.round(random));//0 0r 1 is round up
+console.log(Math.round(random *100));//1 to 100 can be print randomly
+
+
+
 
 
 
