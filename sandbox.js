@@ -1,11 +1,16 @@
-const link=document.querySelector('a')
-console.log(link.getAttribute('href'));
-link.setAttribute('href','https://github.com/sudeshnakhedekar');
-link.innerText ='Github website';
-link.setAttribute('style','color: red');
+const title = document.querySelector('h1')
+//title.setAttribute('style','margin: 50px;')//overwrite the style property
 
-const mssg = document.querySelector('p')
-console.log(mssg.getAttribute('class'));
-mssg.setAttribute('class','success');
-mssg.setAttribute('style','color: green');
-mssg.innerText='heeloooo ji'; 
+console.log(title.style);
+console.log(title.style.color);
+
+//does overide the property instead add  changes
+title.style.margin='50px';
+title.style.color ='purple';
+
+//for double barrel property name then we use camel cse.
+title.style.fontSize='60px';
+title.style.margin='';// removes the margin
+
+
+ 
