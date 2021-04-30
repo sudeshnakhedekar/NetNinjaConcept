@@ -1,16 +1,37 @@
-const title = document.querySelector('h1')
-//title.setAttribute('style','margin: 50px;')//overwrite the style property
+ 
+// const content = document.querySelector('p');
 
-console.log(title.style);
-console.log(title.style.color);
+// console.log(content.classList);//whole list classes element
 
-//does overide the property instead add  changes
-title.style.margin='50px';
-title.style.color ='purple';
+// //add and remove classes from elements  
+// content.classList.add('error')
+// content.classList.remove('error')
 
-//for double barrel property name then we use camel cse.
-title.style.fontSize='60px';
-title.style.margin='';// removes the margin
+// content.classList.add('sucess')
+
+
+const paras =document.querySelectorAll('p')
+
+paras.forEach (para =>{
+    //console.log(para.textContent);//you can use .innerText but textContent shows the hidden data too.
+if(para.textContent.includes('error')){
+para.classList.add('error')
+}
+if(para.textContent.includes('success')){
+    para.classList.add('success')
+    }
+})
+
+//how to toggel classes
+
+const title =document.querySelector('.title')
+title.classList.toggle('test');
+title.classList.toggle('test');// it  removes togglr
+
+
+
+
+
 
 
  
