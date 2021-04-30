@@ -1,22 +1,18 @@
+//DOM
 
-//primitive values
-let scoreOne = 50;
-let scoreTwo = scoreOne;
-console.log(`scoreOne: ${scoreOne}`,`scoreTwo: ${scoreTwo}`);
+//1
+// const para =document.querySelector('body > h1');
+// console.log(para);
 
-scoreOne=100;
-console.log(`scoreOne: ${scoreOne}`,`scoreTwo: ${scoreTwo}`);
-
-//Reference values
-
-const userOne ={name:'ryu', age:20};
-const userTwo =userOne;
-console.log(userOne, userTwo);
-userOne.age =40;
-console.log(userOne, userTwo);
-
-
-
+//2
+const paras = document.querySelectorAll('p');
+const error = document.querySelectorAll('.error');
+//forEach can be used.
+// paras.forEach(para =>{
+//     console.log(para);
+// })
+// console.log(paras[2]);
+console.log(paras);
 
 
 
