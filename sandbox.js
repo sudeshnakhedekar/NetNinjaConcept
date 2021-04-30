@@ -1,20 +1,15 @@
-//DOM
+ //get and element by ID
+ const title = document.getElementById('page-title')
+ console.log(title);
 
-//1
-// const para =document.querySelector('body > h1');
-// console.log(para);
+//get elements by their class name
+const errors = document.getElementsByClassName('error')
+console.log(errors);
+ 
+//get elements by their  tag name
 
-//2
-const paras = document.querySelectorAll('p');
-const error = document.querySelectorAll('.error');
-//forEach can be used.
-// paras.forEach(para =>{
-//     console.log(para);
-// })
-// console.log(paras[2]);
+const paras = document.getElementsByTagName('p')
 console.log(paras);
-
-
 
 
 
