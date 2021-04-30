@@ -2,6 +2,7 @@
     padding: 10px;
     color: red;
     border: 1px dotted red;
+    font-family: 'Courier New', Courier, monospace;
 }
 .success{
     padding: 10px;
