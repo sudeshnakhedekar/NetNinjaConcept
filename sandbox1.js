@@ -6,8 +6,10 @@ const request = new XMLHttpRequest();
 //track progress of request using 'event listener & specifiv event caalled ready state change.
 request.addEventListener('readystatechange',() =>{
     //console.log(request, request.readyState);
-    if(request.readyState ===4){
+    if(request.readyState ===4 && request.status ===200){
         console.log(request.responseText);
+    }else if(request.readyState ===4){
+console.log('coild not fetch the data');
     }
 });
 
