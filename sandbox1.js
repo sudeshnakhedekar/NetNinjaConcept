@@ -1,10 +1,16 @@
-console.log(1); 
-console.log(2);
+//http request --> to get some external data via kind of api endpoint
 
-//Async code runs after the set time without blocking the other codes.
-setTimeout(() => {
- console.log('callback function fried');   
-}, 2000);
+// XMLHttpRequest -->this create us a request object .
+const request = new XMLHttpRequest();
 
-console.log(3);
-console.log(4); 
+//track progress of request using 'event listener & specifiv event caalled ready state change.
+request.addEventListener('readystatechange',() =>{
+    //console.log(request, request.readyState);
+    if(request.readyState ===4){
+        console.log(request.responseText);
+    }
+});
+
+request.open('GET' ,'https://jsonplaceholder.typicode.com/todos/');
+request.send();
+ 
