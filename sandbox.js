@@ -26,7 +26,7 @@ if(para.textContent.includes('success')){
 
 const title =document.querySelector('.title')
 title.classList.toggle('test');
-title.classList.toggle('test');// it  removes togglr
+title.classList.toggle('test');// it  removes toggl
 
 
 
