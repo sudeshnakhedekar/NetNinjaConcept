@@ -1,5 +1,5 @@
 
-const getTodos = (callback) =>{
+const getTodos = (resource,callback) =>{
 
 
     //http request --> to get some external data via kind of api endpoint
@@ -19,21 +19,29 @@ request.addEventListener('readystatechange',() =>{
     }
 });
 
-request.open('GET' ,'https://jsonplaceholder.typicode.com/todos/');
+request.open('GET' , resource);
 request.send();
  
-console.log(1);
-console.log(2);
 
 };
- getTodos((error, data) =>{
+ getTodos('todos/luigi.json',(error, data) =>{
 console.log('callback fired');
-if(error){
-    console.log(error);
-}else{
+console.log(data);
+
+getTodos('todos/mario.json',(error,data) =>{
     console.log(data);
-}
+
+    getTodos('todos/shaun.json',(error,data) =>{
+        console.log(data);
+    });
+
+});
+
+// if(error){
+//     console.log(error);
+// }else{
+//     console.log(data);
+// }
  });
 
- console.log(3);
- console.log(4);
+
