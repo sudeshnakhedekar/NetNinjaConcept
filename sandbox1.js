@@ -1,6 +1,7 @@
 
 const getTodos = (resource,callback) =>{
 
+return new Promise((resolve , reject) =>{
 
     //http request --> to get some external data via kind of api endpoint
 
@@ -9,40 +10,58 @@ const request = new XMLHttpRequest();
 
 //track progress of request using 'event listener & specifiv event caalled ready state change.
 request.addEventListener('readystatechange',() =>{
-    //console.log(request, request.readyState);
+ 
     if(request.readyState === 4 && request.status === 200){
         const data =JSON.parse(request.responseText)
-      callback(undefined,data);
-        //  console.log(request, request.responseText);
+      resolve(data);
+      
     }else if(request.readyState ===4){
-      callback('could not fetch the data' ,undefined);  
-        // console.log('could not fetch the data');
+      reject('error geeting resource');
+        
     }
 });
 
 request.open('GET' , resource);
 request.send();
- 
 
-};
- getTodos('todos/luigi.json',(error, data) =>{
-console.log('callback fired');
-console.log(data);
-
-getTodos('todos/mario.json',(error,data) =>{
-    console.log(data);
-
-    getTodos('todos/shaun.json',(error,data) =>{
-        console.log(data);
-    });
 
 });
 
-// if(error){
+};
+
+getTodos('todos/luigi.json').then((data) =>{
+         console.log('Promised resolved:',data);
+     }, (error) =>{
+    console.log('Promised rejected:' ,error);
+    
+     });
+    
+
+
+
+ // example :Promises Concept
+
+//  const getsomethig = ()=>{
+
+//     return new Promise((resovle, reject) =>{
+//         //fetech something
+//      resovle('some data');
+//     //reject('some error');
+//     });
+
+//  }
+
+  
+// //  getsomethig().then((data) =>{
+// //      console.log(data);
+// //  }, (error) =>{
+// // console.log(error);
+
+// //  });
+
+
+// getsomethig().then(data =>{
+// console.log(data);
+// }).catch(error =>{
 //     console.log(error);
-// }else{
-//     console.log(data);
-// }
- });
-
-
+// });
