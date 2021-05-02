@@ -16,7 +16,7 @@ request.addEventListener('readystatechange',() =>{
       resolve(data);
       
     }else if(request.readyState ===4){
-      reject('error geeting resource');
+      reject('error getting resource');
         
     }
 });
@@ -30,9 +30,15 @@ request.send();
 };
 
 getTodos('todos/luigi.json').then((data) =>{
-         console.log('Promised resolved:',data);
-     }, (error) =>{
-    console.log('Promised rejected:' ,error);
+         console.log('Promised 1 resolved:',data);
+         return getTodos('todos/mario.json');
+     }).then(data =>{
+console.log('Promised 2 resolved',data);
+return getTodos('todos/shaun.json');
+   }).then((data) =>{
+console.log('Promised 3 resolved' , data);
+   }).catch((error) =>{
+    console.log('Promised rejected:',error);
     
      });
     
